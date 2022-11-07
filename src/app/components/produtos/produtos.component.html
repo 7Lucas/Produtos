@@ -1,0 +1,10 @@
+<h1>Brinquedos</h1>
+
+<table>
+    <th>
+        <tr *ngFor="let produto of produtos">
+            <button type="button" (click)="onSelect(produto)"[class.selected]="produto === selectedProduto">
+                <span>{{produto.nome}}</span>
+            </button>
+        </tr>
+    </th>

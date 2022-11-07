@@ -54,7 +54,7 @@ export const PRODUTOS: Produto[] = [
     id: 8, 
     categoria: 'Brinquedos', 
     nome: 'Futebol de Sabão Grande',
-    tamanho: '10, 8', // ['10', '8']
+    tamanho: '10, 5', // ['10', '8']
     recomendacao: '4-24'
 },
 {

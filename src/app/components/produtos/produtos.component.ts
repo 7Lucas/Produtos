@@ -10,6 +10,7 @@ import { ProdutoService } from 'src/app/produto.service';
 export class ProdutosComponent implements OnInit {
 
   produtos: Produto[] = [];
+  selectedProduto ?: Produto;
   
 
   constructor(private produtoService: ProdutoService) {}
@@ -20,9 +21,11 @@ export class ProdutosComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.getProdutos();
   }
 
-
-
+  onSelect(produto: Produto): void{
+    this.selectedProduto = produto;
+  }
 
 }
