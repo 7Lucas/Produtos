@@ -1,8 +1,48 @@
-button{
+h1{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 60px;
+    color: blue;
+    font-weight: bolder;
+    margin-top: 1px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 
+    -1px -1px 0px #FFF, 
+    -1px 1px 0px #FFF,                    
+     1px -1px 0px #FFF,                  
+     1px 0px 0px #FFF;
+}
+
+h2{
     font-family: Verdana, Geneva, sans-serif;
     color: yellow;
     font-weight: bolder;
-    height: 40px;
-    width: 200px;
+    font-size:  120%;
+}
+
+button{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size:  120%;
+    color: yellow;
+    font-weight: bolder;
+    height: 80px;
+    width: 400px;
     background-color: blue;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.info{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size:  120%;
+    height: 180px;
+    width: 400px;
+    background-color: blue;
+    text-align: center;
+    padding-top: 1.5px;
+    color: #FFF;
 }

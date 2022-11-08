@@ -1,10 +1,28 @@
 <h1>Brinquedos</h1>
 
-<table>
-    <th>
-        <tr *ngFor="let produto of produtos">
-            <button type="button" (click)="onSelect(produto)"[class.selected]="produto === selectedProduto">
-                <span>{{produto.nome}}</span>
-            </button>
-        </tr>
-    </th>
+<div class="container">
+    <div class="bloc1">
+        <table>
+            <th>
+                <tr *ngFor="let produto of produtos">
+                    <button type="button" (click)="onSelect(produto)"[class.selected]="produto === selectedProduto">
+                        <span>{{produto.nome}}</span>
+                    </button>
+                </tr>
+            </th>
+        </table>
+    </div>
+
+    <div class="bloc2">
+        <div class="info" *ngIf="selectedProduto">
+            <h2>{{selectedProduto.nome | uppercase}}</h2>
+            <div>
+                <!--<label for="nome-produto">Nome do Produto: </label>
+                <input id="nome-produto" [(ngModel)]="selectedProduto.nome" placeholder="nome">-->
+            </div>
+            <div>Categoria: {{selectedProduto.categoria}}</div>
+            <div>Tamanho: {{selectedProduto.tamanho}}m</div>
+            <div>Idade recomendada: {{selectedProduto.recomendacao}}</div>
+        </div>
+    </div>   
+</div>     

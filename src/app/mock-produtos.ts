@@ -25,7 +25,7 @@ export const PRODUTOS: Produto[] = [
 {
     id: 4, 
     categoria: 'Brinquedos', 
-    nome: 'Piscinna de Bolinhas',
+    nome: 'Piscina de Bolinhas',
     tamanho: '2', 
     recomendacao: '4-8'
 },

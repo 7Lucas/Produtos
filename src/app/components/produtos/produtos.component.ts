@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { Produto } from 'src/app/produto';
 import { ProdutoService } from 'src/app/produto.service';
+//import { PRODUTOS } from 'src/app/mock-produtos'
 
 @Component({
   selector: 'app-produtos',
@@ -9,9 +10,10 @@ import { ProdutoService } from 'src/app/produto.service';
 })
 export class ProdutosComponent implements OnInit {
 
+  //@Input() produto?: Produto;
+
   produtos: Produto[] = [];
   selectedProduto ?: Produto;
-  
 
   constructor(private produtoService: ProdutoService) {}
 
