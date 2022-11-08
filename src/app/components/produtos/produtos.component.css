@@ -39,10 +39,22 @@ button{
 .info{
     font-family: Verdana, Geneva, sans-serif;
     font-size:  120%;
-    height: 180px;
+    height: 220px;
     width: 400px;
     background-color: blue;
     text-align: center;
     padding-top: 1.5px;
     color: #FFF;
+}
+
+input{
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: bolder;
+    background-color: yellow;
+    color: blue;
+    text-align: center;
+}
+
+.input{
+    padding-top: 5%;
 }

@@ -16,13 +16,13 @@
     <div class="bloc2">
         <div class="info" *ngIf="selectedProduto">
             <h2>{{selectedProduto.nome | uppercase}}</h2>
-            <div>
-                <!--<label for="nome-produto">Nome do Produto: </label>
-                <input id="nome-produto" [(ngModel)]="selectedProduto.nome" placeholder="nome">-->
-            </div>
             <div>Categoria: {{selectedProduto.categoria}}</div>
             <div>Tamanho: {{selectedProduto.tamanho}}m</div>
             <div>Idade recomendada: {{selectedProduto.recomendacao}}</div>
+            <div class="input">
+                <label for="tamanho-produto">Att tamanho: </label>
+                <input id="tamanho-produto" [(ngModel)]="selectedProduto.tamanho" placeholder="tamanho">
+            </div>
         </div>
     </div>   
 </div>     
